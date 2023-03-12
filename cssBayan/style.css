@@ -1,32 +1,28 @@
 body {
-    background-color: bisque;
-   
+    background-color: rgb(158, 179, 40);
 }
 
-
-h1 {
-    /* text-align: center; */
+img {
+    width: 100%;
 }
 
 .mainContainer {
-    /* margin-left: auto;
-    margin-right: auto;
-    max-width: 1920px; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: auto;
 }
+
 ul {
     list-style-type: none;
     list-style: none;
 }
 
 li:not(:nth-child(1)) {
-
     width: auto;
     overflow: hidden;
     border-top: 1px solid silver;
+    cursor: pointer;
 }
 
 .imgContainer {
@@ -36,13 +32,10 @@ li:not(:nth-child(1)) {
 
 .listItem:hover .imgContainer {
     display: block;
-   
-    
 }
 
-
 h2 {
-    color: blue;
+    color: rgb(26, 62, 182);
     padding-right: 100px;
 }
 
@@ -52,3 +45,4 @@ h2 {
     background: url(/cssBayan/icon.svg) no-repeat right;
 }
 
+/* .listItem:focus ~ .imgContainer{display: block;} */
