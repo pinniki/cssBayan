@@ -1,5 +1,11 @@
 body {
     background-color: bisque;
+   
+}
+
+
+h1 {
+    /* text-align: center; */
 }
 
 .mainContainer {
@@ -16,9 +22,11 @@ ul {
     list-style: none;
 }
 
-li {
+li:not(:nth-child(1)) {
+
+    width: auto;
     overflow: hidden;
-    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
 }
 
 .imgContainer {
@@ -28,17 +36,19 @@ li {
 
 .listItem:hover .imgContainer {
     display: block;
-    transition:cubic-bezier(1, 0, 0, 1) 1s linear 0.3s;
+   
+    
 }
+
 
 h2 {
     color: blue;
+    padding-right: 100px;
 }
 
 .mainContainer:hover h2 {
     color: black;
-    background: url(/cssBayan/normalize.css) right no-repeat;
-    transition: color 1s;
-    
+    transition: color 0.3s;
+    background: url(/cssBayan/icon.svg) no-repeat right;
 }
 
