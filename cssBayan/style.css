@@ -21,6 +21,14 @@ body {
     font-size: 30px;
 }
 
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 h2 {
     color: rgb(26, 62, 182);
     padding-right: 100px;
@@ -53,13 +61,16 @@ h2 {
     justify-content: space-between;
   }
 
-
+  html {
+    scroll-behavior: smooth;
+  }
 
 .textLable {
     display: flex;
     justify-content: space-between;
     color: rgb(19, 133, 70);
   }
+  
 
 .imgMem {
     height: 0;
